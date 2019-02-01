@@ -29,6 +29,9 @@
     "@pown/cli": "^2.8.0",
     "@pown/modules": "^2.2.1"
   },
+  "engines": {
+    "node": ">=0.11"
+  },
   "pown": {
     "commands": [
       "lib/commands/script.js"
