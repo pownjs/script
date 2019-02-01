@@ -27,7 +27,6 @@
   },
   "dependencies": {
     "@pown/cli": "^2.8.0",
-    "@pown/file": "^2.0.0",
     "@pown/modules": "^2.2.1"
   },
   "pown": {
