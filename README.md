@@ -6,6 +6,40 @@
 
 > **WARNING**: Work in progress.
 
+## Quickstart
+
+This tool is meant to be used as part of [Pown.js](https://github.com/pownjs/pown) but it can be invoked separately as an independent tool.
+
+Install Pown first as usual:
+
+```sh
+$ npm install -g pown@latest
+```
+
+Invoke directly from Pown:
+
+```sh
+$ pown script
+```
+
+Otherwise, install this module locally from the root of your project:
+
+```sh
+$ npm install @pown/script --save
+```
+
+Once done, invoke pown cli:
+
+```sh
+$ ./node_modules/.bin/pown-cli script
+```
+
+You can also use the global pown to invoke the tool locally:
+
+```sh
+$ POWN_ROOT=. pown script
+```
+
 ## Usage
 
 > **WARNING**: This pown command is currently under development and as a result will be subject to breaking changes.
