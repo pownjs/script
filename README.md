@@ -8,6 +8,18 @@ Pown Script is a simple scripting environment. The key advantage of using Pown S
 
 Pown Script implements some some standard commands such as `echo`, `sleep` and even `set`. This is done for interoperability. Every pown script is also a valid bash script. 
 
+## Credits
+
+This tool is part of [secapps.com](https://secapps.com) open-source initiative.
+
+```
+  ___ ___ ___   _   ___ ___  ___
+ / __| __/ __| /_\ | _ \ _ \/ __|
+ \__ \ _| (__ / _ \|  _/  _/\__ \
+ |___/___\___/_/ \_\_| |_|  |___/
+  https://secapps.com
+```
+
 ## Quickstart
 
 This tool is meant to be used as part of [Pown.js](https://github.com/pownjs/pown) but it can be invoked separately as an independent tool.
