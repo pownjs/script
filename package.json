@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "@pown/cli": "^2.11.0",
-    "@pown/modules": "^2.2.1"
+    "@pown/modules": "^2.2.1",
+    "shell-quote": "^1.6.1"
   },
   "engines": {
     "node": ">=0.11"
