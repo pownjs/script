@@ -34,7 +34,7 @@
   },
   "pown": {
     "commands": [
-      "lib/commands/script.js"
+      "commands/script/index.js"
     ]
   }
 }
