@@ -33,7 +33,7 @@ exports.yargs = {
     },
 
     handler: async(argv) => {
-        const { command, exit, expand, skip, file, script, args } = argv
+        const { skipExit, command, exit, expand, skip, file, script, args } = argv
 
         let skipIndex = skip
 
@@ -94,7 +94,9 @@ exports.yargs = {
         const processExit = (code) => {
             process.exit = originalExit
 
-            process.exit(code)
+            if (!skipExit) {
+                process.exit(code)
+            }
         }
 
         let index = -1

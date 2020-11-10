@@ -14,7 +14,7 @@ exports.yargs = {
         const { expression } = argv
 
         const main = async() => {
-            eval(expression)
+            await eval(expression)
         }
 
         await main()
