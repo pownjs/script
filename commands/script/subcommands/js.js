@@ -1,6 +1,6 @@
 exports.yargs = {
-    command: 'eval',
-    describe: 'Run shell command',
+    command: 'js',
+    describe: 'Run js expression',
 
     builder: {
         expression: {
