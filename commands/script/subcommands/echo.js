@@ -6,7 +6,7 @@ exports.yargs = {
         type: {
             describe: 'Message type',
             default: 'info',
-            alias: 't',
+            alias: ['t'],
             choices: ['info', 'warn', 'error']
         }
     },

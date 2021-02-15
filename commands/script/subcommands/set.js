@@ -6,13 +6,13 @@ exports.yargs = {
         exit: {
             describe: 'Exit immediately',
             type: 'boolean',
-            alias: 'e'
+            alias: ['e']
         },
 
         expand: {
             describe: 'Expand command',
             type: 'boolean',
-            alias: 'x'
+            alias: ['x']
         }
     },
 
