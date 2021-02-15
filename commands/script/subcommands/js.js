@@ -1,20 +1,26 @@
 exports.yargs = {
-    command: 'js',
+    command: 'js [exp...]',
     describe: 'Run js expression',
 
     builder: {
         expression: {
             describe: 'JavaScript expression',
             type: 'string',
-            alias: 'e'
+            alias: ['e']
         }
     },
 
     handler: async(argv) => {
-        const { expression } = argv
+        const { expression, exp } = argv
 
         const main = async() => {
-            await eval(expression)
+            if (expression) {
+                await eval(expression)
+            }
+            else
+            if (exp) {
+                await eval(exp.join(' '))
+            }
         }
 
         await main()
