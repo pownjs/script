@@ -52,7 +52,9 @@ exports.yargs = {
             loadableModules: loadableModules,
             loadableCommands: loadableCommands,
 
-            inlineCommands: subcommands
+            inlineCommands: subcommands,
+
+            file: file
         }
 
         const fs = require('fs')
