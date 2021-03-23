@@ -26,8 +26,8 @@
     "@pown/toolchain": "^2.1.0"
   },
   "dependencies": {
-    "@pown/cli": "^2.29.0",
-    "@pown/modules": "^2.8.0"
+    "@pown/cli": "^2.30.0",
+    "@pown/modules": "^2.9.0"
   },
   "engines": {
     "node": ">=11.0.0"
