@@ -7,10 +7,6 @@ exports.yargs = {
     handler: (argv) => {
         const process = require('process')
 
-        const used = process.memoryUsage()
-
-        for (let key in used) {
-            console.info(`${key} ${Math.round(used[key] / 1024 / 1024 * 100) / 100} MB`)
-        }
+        console.info(Object.entries(process.memoryUsage()).map(([name, value]) => `${name}=${Math.round(value / 1024 / 1024 * 100) / 100}MB`).join(', '))
     }
 }
