@@ -5,6 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "script": "POWN_ROOT=. pown-cli script",
+    "usage": "POWN_ROOT=. pown-cli script --help",
+    "build": "true",
     "test": "mocha"
   },
   "repository": {
