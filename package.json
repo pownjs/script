@@ -30,8 +30,7 @@
   },
   "devDependencies": {
     "@pown/cli": "^2.33.0",
-    "@pown/modules": "^2.10.0",
-    "@pown/toolchain": "^2.1.0"
+    "@pown/modules": "^2.10.0"
   },
   "dependencies": {},
   "engines": {
