@@ -87,10 +87,6 @@ exports.yargs = {
             })
         }
 
-        if (name !== '-') {
-            process.chdir(path.dirname(name))
-        }
-
         const originalExit = process.exit
 
         process.exit = function(...args) {
@@ -132,6 +128,10 @@ exports.yargs = {
 
             if (cmd[0] === 'pown') {
                 cmd.shift()
+            }
+
+            if (name !== '-') {
+                process.chdir(path.dirname(name))
             }
 
             try {
