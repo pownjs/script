@@ -1,5 +1,5 @@
 exports.yargs = {
-    command: 'script [file|script] [args...]',
+    command: 'script [file] [args...]',
     describe: 'Simple scripting engine for automating pown commands.',
 
     builder: (yargs) => {
@@ -33,7 +33,7 @@ exports.yargs = {
     },
 
     handler: async(argv) => {
-        const { skipExit, command, exit, expand, skip, file, script, args } = argv
+        const { skipExit, command, exit, expand, skip, file, args } = argv
 
         let skipIndex = skip
 
@@ -73,7 +73,7 @@ exports.yargs = {
 
             const bufferStream = new PassThrough()
 
-            bufferStream.end(script)
+            bufferStream.end(file)
 
             rl = readline.createInterface({
                 input: bufferStream
@@ -85,6 +85,12 @@ exports.yargs = {
             rl = readline.createInterface({
                 input: file === undefined ? process.stdin : fs.createReadStream(file)
             })
+        }
+
+        let root
+
+        if (name !== '-') {
+            root = path.dirname(path.resolve(name))
         }
 
         const originalExit = process.exit
@@ -130,8 +136,8 @@ exports.yargs = {
                 cmd.shift()
             }
 
-            if (name !== '-') {
-                process.chdir(path.dirname(name))
+            if (root) {
+                process.chdir(root)
             }
 
             try {
