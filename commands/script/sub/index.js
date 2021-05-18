@@ -1,4 +1,4 @@
-const subcommands = [
+const sub = [
     require('./js'),
     require('./sh'),
     require('./set'),
@@ -9,4 +9,4 @@ const subcommands = [
     require('./throw')
 ]
 
-module.exports = { subcommands }
+module.exports = { sub }

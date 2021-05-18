@@ -42,8 +42,8 @@ exports.yargs = {
 
         const { loadableModules, loadableCommands } = await extract()
 
+        const { sub } = require('./sub')
         const { options } = require('./globals/options')
-        const { subcommands } = require('./subcommands')
 
         options.exit = exit
         options.expand = expand
@@ -52,12 +52,14 @@ exports.yargs = {
             loadableModules: loadableModules,
             loadableCommands: loadableCommands,
 
-            inlineCommands: subcommands,
+            inlineCommands: sub,
 
             file: file
         }
 
         const fs = require('fs')
+        const path = require('path')
+        const process = require('process')
         const readline = require('readline')
 
         let name
@@ -83,6 +85,10 @@ exports.yargs = {
             rl = readline.createInterface({
                 input: file === undefined ? process.stdin : fs.createReadStream(file)
             })
+        }
+
+        if (name !== '-') {
+            process.chdir(path.dirname(name))
         }
 
         const originalExit = process.exit
