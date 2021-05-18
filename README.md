@@ -62,7 +62,7 @@ $ POWN_ROOT=. pown script
 > **WARNING**: This pown command is currently under development and as a result will be subject to breaking changes.
 
 ```
-pown-cli script [file|script] [args...]
+pown-cli script [file] [args...]
 
 Simple scripting engine for automating pown commands.
 
