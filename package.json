@@ -29,7 +29,7 @@
     "@pown/modules": "^2.9.0"
   },
   "devDependencies": {
-    "@pown/cli": "^2.33.0",
+    "@pown/cli": "^2.35.0",
     "@pown/modules": "^2.10.0"
   },
   "dependencies": {},
