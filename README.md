@@ -67,10 +67,10 @@ pown-cli script [file] [args...]
 Simple scripting engine for automating pown commands.
 
 Options:
-  --version      Show version number  [boolean]
-  --help         Show help  [boolean]
-  --command, -c  Evaluate inline commands  [boolean] [default: false]
-  --exit, -e     Exit immediately  [boolean] [default: false]
-  --expand, -x   Expand command  [boolean] [default: false]
-  --skip, -s     Skip number of lines  [number] [default: 0]
+      --version  Show version number  [boolean]
+      --help     Show help  [boolean]
+  -c, --command  Evaluate inline commands  [boolean] [default: false]
+  -e, --exit     Exit immediately  [boolean] [default: false]
+  -x, --expand   Expand command  [boolean] [default: false]
+  -s, --skip     Skip number of lines  [number] [default: 0]
 ```
