@@ -25,12 +25,12 @@
   },
   "homepage": "https://github.com/pownjs/pown-script#readme",
   "peerDependencies": {
-    "@pown/cli": "^2.30.0",
-    "@pown/modules": "^2.9.0"
+    "@pown/cli": "^2.41.0",
+    "@pown/modules": "^2.11.0"
   },
   "devDependencies": {
-    "@pown/cli": "^2.35.0",
-    "@pown/modules": "^2.10.0"
+    "@pown/cli": "^2.41.0",
+    "@pown/modules": "^2.11.0"
   },
   "dependencies": {},
   "engines": {
